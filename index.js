@@ -421,7 +421,7 @@ switch (command) {
     if(!isGroup) return m.reply(msg.group)
     if(!isAdmins && !isOwner && !isBot) return m.reply(msg.admin)
     if (isOffline === true ) {
-      return m.reply('✅ Bot offline')
+      return m.reply('✅💬 Bot offline')
     }
     await addOffline(from)
     m.reply(msg.offline)
@@ -431,7 +431,7 @@ switch (command) {
     if(!isGroup) return m.reply(msg.group)
     if(!isAdmins && !isOwner && !isBot) return m.reply(msg.admin)
     if (isOffline === false ) {
-      return m.reply('✅ Bot online')
+      return m.reply('✅🔥 Bot online')
     }
     await delOffline(from)
     m.reply(msg.online)
@@ -447,7 +447,7 @@ switch (command) {
  
  case 'menu': 
  case 'help':
-    capt = `────  *DyLux  ┃ ᴮᴼᵀ*  ────
+    capt = `────  * DEMON-BOT ┃ 🛐🔥*  ────
     
 ${msg.hi} *${pushname}* ${ucapanWaktu}
     
@@ -460,12 +460,12 @@ ${msg.hi} *${pushname}* ${ucapanWaktu}
 ${readMore}
 ${menu(prefix)} 
 `
-    Fg.send3ButtonLoc(from, thumbfg, capt, `▢ *DyLux  ┃ ᴮᴼᵀ*\n▢ *Total Hits* : ${isTotalcmd}\n▢ *Usuarios* : ${User.length}\n▢ *Runtime* : ${kyun(process.uptime())}\n\n${msg.foll}`, `⦙☰ Menu Vc`, `${prefix}menuvc`, '✆ Owner', `${prefix}owner`, '⏍ Info', `${prefix}info`)
+    Fg.send3ButtonLoc(from, thumbfg, capt, `▢ *DEMON-BOT ┃ 🔥🛐*\n▢ *Total Hits* : ${isTotalcmd}\n▢ *Usuarios* : ${User.length}\n▢ *Runtime* : ${kyun(process.uptime())}\n\n${msg.foll}`, `⦙☰ Menu Vc`, `${prefix}menuvc`, '✆ Owner', `${prefix}owner`, '⏍ Info', `${prefix}info`)
     break
     
     case 'menuvc': 
  case 'helpvc':
-    capt = `────  *DyLux  ┃ ᴮᴼᵀ*  ────
+    capt = `────  *DEMON-BOT ┃ 🔥🛐*  ────
     
 ${msg.hi} *${pushname}* ${ucapanWaktu}
     
@@ -482,7 +482,7 @@ ${menuVC}
     case 'groups': 
     case 'dylux': 
     gps = `
-≡  *DyLux  ┃ ᴮᴼᵀ*  GRUPOS
+≡  *DEMON-BOT ┃ 🛐🔥*  GRUPOS
 
 ▢ ${msg.gp} 1
 https://chat.whatsapp.com/G5sXrkhJ0pb0Tu8nhWLaFK
@@ -518,16 +518,16 @@ case 'lang':
     if(!value) return m.reply(msg.Pbahasa)
     if (value.toLowerCase() === "es") {
       await addBahasa(sender, "es")
-      m.reply("✅ Español Seleccionado\nAhora el bot responderá a su mensaje en Español")
+      m.reply("✅🦅 Español Seleccionado\nAhora el bot responderá a su mensaje en Español")
     } else if (value.toLowerCase() === "id") {
       await addBahasa(sender, "id")
-      m.reply("✅ Bahasa Indonesia terpilih\nSekarang bot akan membalas pesanmu dengan bahasa Indonesia")
+      m.reply("✅🦅 Bahasa Indonesia terpilih\nSekarang bot akan membalas pesanmu dengan bahasa Indonesia")
     } else if (value.toLowerCase() === "en") {
       await addBahasa(sender, "en")
-      m.reply("✅ Selected English\nNow the bot will reply to your message in English")
+      m.reply("✅🦅 Selected English\nNow the bot will reply to your message in English")
      } else if (value.toLowerCase() === "pt") {
       await addBahasa(sender, "pt")
-      m.reply("✅ Português selecionados\nAgora o bot vai responder a sua mensagem em Português")
+      m.reply("✅🦅 Português selecionados\nAgora o bot vai responder a sua mensagem em Português")
     } else {
       m.reply(msg.nobahasa)
     }
@@ -537,11 +537,11 @@ case 'lang':
 case 'creator':
 case 'creador': 
 case 'developer':
-number = '59172945992@s.whatsapp.net'
+number = '50360096719@s.whatsapp.net'
     capt = `▢ ${msg.num} : @${number.split('@')[0]}\n\n`
-    capt += '▢ Instagram : https://www.instagram.com/fg98._'
-    await Fg.fakeLink(from, capt, thumbfg, `${msg.click}`, 'https://www.instagram.com/fg98._', mek)
-   /* Fg.sendContact(from, '59172945992', 'owner', {
+    capt += '▢ Instagram : ._'
+    await Fg.fakeLink(from, capt, thumbfg, `${msg.click}`, '
+   /* Fg.sendContact(from, '50360096719', 'owner', {
 	 key: {
           fromMe: false,
 	      participant: `0@s.whatsapp.net`, ...(from ? 
@@ -577,13 +577,13 @@ number = '59172945992@s.whatsapp.net'
 ▢ *${unread.length}* Mensaje no leídos
 
 
-*≡ DISPOSITIVO*
+*≡ DISPOSITIVO💬🔥*
 
 ▢ Versi Wa : ${Fg.user.phone.wa_version}
 
 *≡ OWNER*
-▢ Instagram : https://www.instagram.com/fg98._
-▢ WhatsApp : wa.me/59172945992 
+▢ Instagram :
+▢ WhatsApp : wa.me/50360096719
 
 *≡ SCRIPT*
 ▢ Git : ${package.homepage} 
@@ -633,7 +633,7 @@ Fg.send2Button(from, teks, '*_© FG98 DyLux_*', `ꨄ︎ Apoyar`, `${prefix}donat
   
 case 'pregunta':
 case 'preg':
-if(!value) return m.reply(`📌 *${msg.exple} :*\n *${prefix + command}* ${msg.pregt}`)
+if(!value) return m.reply(`📌🦅 *${msg.exple} :*\n *${prefix + command}* ${msg.pregt}`)
 prefg = await fetchJson(`https://api.simsimi.net/v2/?text=${value}&lc=${cekBahasa(who)}`, {method: 'get'})
  m.reply(`≡ *PREGUNTAS*
  
@@ -791,7 +791,7 @@ case "s":
     go = await fgx.pinterest(value)
     pin = pickRandom(go)
     if(!pin) return m.reply('Error')
-    Fg.sendMessage(from, await getBuffer(pin), image, { quoted: mek, caption: `✅ *${msg.resulf}*\n`, thumbnail: fakethumb })
+    Fg.sendMessage(from, await getBuffer(pin), image, { quoted: mek, caption: `✅🔥 *${msg.resulf}*\n`, thumbnail: fakethumb })
  break 
 
   case 'man':
@@ -801,7 +801,7 @@ case "s":
     go = await fgx.pinterest(push)
     pin = pickRandom(go)
     if(!pin) return m.reply('Error')
-    Fg.sendButtonImg(from, await getBuffer(pin), `✅ *${msg.resulf}*\n`, msg.next(command), `▷▷ ${msg.next2}`, `${prefix + command}`, mek)
+    Fg.sendButtonImg(from, await getBuffer(pin), `✅🔥*${msg.resulf}*\n`, msg.next(command), `▷▷ ${msg.next2}`, `${prefix + command}`, mek)
  break
 
   case 'girl':
@@ -811,7 +811,7 @@ case "s":
     go = await fgx.pinterest(push)
     pin = pickRandom(go) 
     if(!pin) return m.reply('Error')
-    Fg.sendButtonImg(from, await getBuffer(pin), `✅ *${msg.resulf}*\n`, msg.next(command), `▷▷ ${msg.next2}`, `${prefix + command}`, mek)
+    Fg.sendButtonImg(from, await getBuffer(pin), `✅🦈 *${msg.resulf}*\n`, msg.next(command), `▷▷ ${msg.next2}`, `${prefix + command}`, mek)
  break
  
  case 'wallpaper':
@@ -821,7 +821,7 @@ case "s":
     go = await fgx.pinterest(`Wallpaper hd ${value}`)
     pin = pickRandom(go)
     if(!pin) return m.reply('⚠️ Error')
-    Fg.sendButtonImg(from, await getBuffer(pin), `✅ *${msg.resulf}*\n`, msg.next(command), `▷▷ ${msg.next2}`, `${prefix + command} ${value}`, mek)
+    Fg.sendButtonImg(from, await getBuffer(pin), `✅🤸 *${msg.resulf}*\n`, msg.next(command), `▷▷ ${msg.next2}`, `${prefix + command} ${value}`, mek)
  break
  
  case 'tomp3':
@@ -848,7 +848,7 @@ case "s":
    if (!value) return m.reply(msg.notext)
    await addReport(sender, value)
    
-   m.reply(`✅  *${pushname}* ${msg.bugr}`)
+   m.reply(`✅🦅🔥  *${pushname}* ${msg.bugr}`)
    break
 
  case 'listreport':
@@ -873,17 +873,17 @@ case "s":
    	  teks += `▢  ${v}\n`
 	  }
 	  teks += '└──────────────\n'
-	  teks += '┌─⊷ *VIDEO* \n'
+	  teks += '┌─⊷ *VIDEO🦅🔥* \n'
 	  for ( x of listvid) { 
    	  teks += `▢  ${x}\n`
 	  }
 	  teks += '└──────────────\n'
-	  teks += '┌─⊷ *AUDIO* \n'
+	  teks += '┌─⊷ *AUDIO🦅🔥* \n'
 	  for ( y of listaud) { 
    	  teks += `▢  ${y}\n`
 	  }
 	  teks += '└──────────────\n'
-	  teks += '┌─⊷ *STICKER* \n'
+	  teks += '┌─⊷ *STICKER🦅🔥* \n'
 	  for ( z of liststik) { 
    	  teks += `▢  ${z}\n`
 	  }
@@ -1047,12 +1047,12 @@ break
 		    		ytresult += '「 *YOUTUBE SEARCH* 」'
 		    		ytresult += '\n________________________\n\n'
 		   			aramas.all.map((video) => {
-		        	ytresult += '📌 *Título :* ' + video.title + '\n'
-		            ytresult += '*🔗 Link* : ' + video.url + '\n'
-		            ytresult += '*⏳ Duración* : ' + video.timestamp + '\n'
-		            ytresult += '*📤 Publicado* : ' + video.ago + '\n________________________\n\n'
+		        	ytresult += '📌🧐 *Título :* ' + video.title + '\n'
+		            ytresult += '*🔗🤖 Link* : ' + video.url + '\n'
+		            ytresult += '*⏳🦅 Duración* : ' + video.timestamp + '\n'
+		            ytresult += '*📤🔥 Publicado* : ' + video.ago + '\n________________________\n\n'
 		    		});
-		    		ytresult += '─── DyLux ┃ ᴮᴼᵀ ───'
+		    		ytresult += '─── DEMON-BOT ┃ 🛐🔥 ───'
 		    		 Fg.sendMessage(from, tbuff, image, {thumbnail:fakethumb , quoted: mek, caption: ytresult})
 		            break
    
@@ -1062,10 +1062,10 @@ break
      let play = await fgx.playstore(value); 
      store = '          *PLAY STORE*\n\n────────────────\n'
      for (let i of play) {
-       store += `▢ *📌${msg.nme}* : ${i.name}
-▢ *🔗 Link* : ${i.link}
-▢ *👨🏻‍💻 Dev* : ${i.developer}
-▢ *🔗 Link Dev* : ${i.link_dev}
+       store += `▢ *🔥📌${msg.nme}* : ${i.name}
+▢ *🔗🧐 Link* : ${i.link}
+▢ *👨🏻‍💻🦅 Dev* : ${i.developer}
+▢ *🔗🔥 Link Dev* : ${i.link_dev}
 ────────────────\n`;
         } 
      m.reply(store);
@@ -1123,7 +1123,7 @@ break
    break
    
    case 'play': 
-   if (!value) return m.reply(`✳️ *${msg.plays}*\n\n📌${msg.exple} *${prefix + command}* Lil Peep broken smile`)
+   if (!value) return m.reply(`✳️ *${msg.plays}*\n\n🦈📌${msg.exple} *${prefix + command}* Lil Peep broken smile`)
    url = await yts(value);
    linkp = url.all 
    if(!linkp) return ('Error')
@@ -1298,7 +1298,7 @@ case 'anularlink':
 linkgp = await Fg.groupInviteCode(from)
 fgxd = `✅ ${msg.linkrevo}
 
-📌 ${msg.newlink} : 
+📌🦅 ${msg.newlink} : 
 https://chat.whatsapp.com/${linkgp}`
     m.reply(fgxd)
     break
@@ -2028,7 +2028,7 @@ Fg.send2ButtonLoc(from, welm, capt, 'Sígueme en Instagram\nhttps://www.instagra
      } else if(value.toLowerCase() === 'bye') {
        capt = bye.replace('@user', tag).replace('@name', pushname).replace('@bio', about).replace('@date', tanggal).replace('@group', groupName)       
   //Fg.sendMessage(from, welm, image, {contextInfo: {  mentionedJid: [sender]}, thumbnail: fakethumb, quoted: mek, caption: capt})
-   Fg.sendButtonLoc(from, welm, capt, 'Sígueme en Instagram\nhttps://www.instagram.com/fg98._', '👋🏻', 'unde', false, {
+   Fg.sendButtonLoc(from, welm, capt, 'Sígueme en Instagram\nhttps://www.instagram.com/fg98._', '🦈👋🏻', 'unde', false, {
 	      contextInfo: { 
             mentionedJid: Fg.parseMention(capt)
 	      } 
@@ -2193,7 +2193,7 @@ switch(VoiceCommand) {
   
  case 'menu': 
  case 'help':
-    capt = `────  *DyLux  ┃ ᴮᴼᵀ*  ────
+    capt = `────  *DEMON-BOT  ┃ 🔥🛐*  ────
     
 ${msg.hi} *${pushname}* ${ucapanWaktu}
     
